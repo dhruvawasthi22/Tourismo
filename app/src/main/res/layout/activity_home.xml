@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/myImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chennai" />
+
+        <TextView
+            android:id="@+id/myImageViewText1"
+            android:layout_width="375dp"
+            android:layout_height="428dp"
+            android:layout_alignLeft="@+id/myImageView1"
+            android:layout_alignTop="@+id/myImageView1"
+            android:layout_alignRight="@+id/myImageView1"
+            android:layout_alignBottom="@+id/myImageView1"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="189dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="C H E N N A I"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/myImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_below="@id/myImageView1"
+            android:baselineAlignBottom="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/lucknow" />
+
+
+        <TextView
+            android:id="@+id/myImageViewText2"
+            android:layout_width="375dp"
+            android:layout_height="428dp"
+            android:layout_alignLeft="@id/myImageView2"
+            android:layout_alignTop="@id/myImageView2"
+            android:layout_alignRight="@id/myImageView2"
+            android:layout_alignBottom="@id/myImageView2"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="-9dp"
+            android:layout_marginBottom="125dp"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="L U C K N O W"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/myImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:layout_below="@id/myImageView2"
+            android:layout_marginTop="-1dp"
+            android:baselineAlignBottom="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/dehradun" />
+
+        <TextView
+            android:id="@+id/myImageViewText3"
+            android:layout_width="408dp"
+            android:layout_height="28dp"
+            android:layout_alignLeft="@id/myImageView3"
+            android:layout_alignTop="@id/myImageView3"
+            android:layout_alignRight="@id/myImageView3"
+            android:layout_alignBottom="@id/myImageView3"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="81dp"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="D E H R A D U N"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "54830104087",
+    "firebase_url": "https://tourismo-b3621.firebaseio.com",
+    "project_id": "tourismo-b3621",
+    "storage_bucket": "tourismo-b3621.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54830104087:android:20fb27475bec3ad5232652",
+        "android_client_info": {
+          "package_name": "com.example.tourismo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54830104087-pdvkec4lu4a2s8cmi4h7nut1kdmf0mhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASIx9egjtRrUGb02i5lRdlcQPx1x4b4Og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54830104087-pdvkec4lu4a2s8cmi4h7nut1kdmf0mhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
