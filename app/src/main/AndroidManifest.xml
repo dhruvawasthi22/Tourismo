@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/tourismo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".guidecontact"></activity>
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,9 +55,7 @@
         <activity android:name=".lkoActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

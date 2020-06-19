@@ -21,8 +21,8 @@ public class ddnActivity extends AppCompatActivity {
     ListView listView;
     TextView titleText;
 
-    String Title[]={"Maps","Weather","Notes","About"};
-    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about};
+    String Title[]={"Maps","Weather","Notes","About","Guide Contact"};
+    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about,R.drawable.guide};
 
 
     @Override
@@ -64,6 +64,14 @@ public class ddnActivity extends AppCompatActivity {
                     Intent itoad = new Intent(ddnActivity.this,cniAbout.class);
                     itoad.putExtra("activity","Dehradun");
                     startActivity(itoad);
+                }
+                if(position==4)
+                {
+                    Toast.makeText(ddnActivity.this, "Please wait for a few seconds!! Fetching data", Toast.LENGTH_SHORT).show();
+                    Intent itog = new Intent(ddnActivity.this,guidecontact.class);
+                    itog.putExtra("activity","dehradun");
+                    startActivity(itog);
+
                 }
             }
         });

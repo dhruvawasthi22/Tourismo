@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,8 +23,8 @@ public class lkoActivity extends AppCompatActivity {
     ListView listView;
     TextView titleText;
 
-    String Title[]={"Maps","Weather ","Notes","About"};
-    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about};
+    String Title[]={"Maps","Weather ","Notes","About","Guide Contact"};
+    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about,R.drawable.guide};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,14 @@ public class lkoActivity extends AppCompatActivity {
                     Intent itoal = new Intent(lkoActivity.this,cniAbout.class);
                     itoal.putExtra("activity","Lucknow");
                     startActivity(itoal);
+                }
+                if(position==4)
+                {
+                    Toast.makeText(lkoActivity.this, "Please wait for a few seconds!! Fetching data", Toast.LENGTH_SHORT).show();
+                    Intent itog = new Intent(lkoActivity.this,guidecontact.class);
+                    itog.putExtra("activity","lucknow");
+                    startActivity(itog);
+
                 }
             }
         });

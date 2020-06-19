@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +21,8 @@ public class cniActivity extends AppCompatActivity {
     ListView listView;
     TextView titleText;
 
-    String Title[]={"Maps","Weather","Notes","About"};
-    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about};
+    String Title[]={"Maps","Weather","Notes","About","Guide Contact"};
+    int images[] ={R.drawable.maps,R.drawable.wf,R.drawable.note,R.drawable.about,R.drawable.guide};
 
 
 
@@ -31,7 +30,7 @@ public class cniActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cni);
-        listView=findViewById(R.id.cniListview);
+        listView=findViewById(R.id.cniListView);
 
 
 
@@ -66,6 +65,14 @@ public class cniActivity extends AppCompatActivity {
                     Intent itoa = new Intent(cniActivity.this,cniAbout.class);
                     itoa.putExtra("activity","Chennai");
                     startActivity(itoa);
+                }
+                if(position==4)
+                {
+                    Toast.makeText(cniActivity.this, "Please wait for a few seconds!! Fetching data", Toast.LENGTH_SHORT).show();
+                    Intent itog = new Intent(cniActivity.this,guidecontact.class);
+                    itog.putExtra("activity","chennai");
+                    startActivity(itog);
+
                 }
             }
         });
